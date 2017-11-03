@@ -1,0 +1,13 @@
+<header>
+    <div class="container">
+        <div class="intro-text">
+            {{ content }}
+            <div class="logo">
+              <img src="/user/themes/agency/img/wag-logo.png" alt="Women's Action Group of Forest Hills" />
+            </div>
+            {% for button in page.header.buttons %}
+                <a class="page-scroll btn btn-xl" href="{{ button.url }}">{{ button.text }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</header>
