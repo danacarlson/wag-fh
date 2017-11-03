@@ -215,6 +215,9 @@ fieldset[disabled] .btn-xl.active {
     font-weight: 400;
     letter-spacing: 1px;
     color: #fff;
+    @media(min-width:768px) {
+      color: $secondary-dark;
+    }
 }
 
 .navbar-default .nav li a:hover,
@@ -266,19 +269,53 @@ fieldset[disabled] .btn-xl.active {
     }
 }
 
+.bg-image {
+  background-image: url(../img/Station_Square-1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  @media(min-width:768px) {
+    min-height: 500px;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .65;
+    background: #fff;
+  }
+}
+
 header {
-    text-align: center;
-    color: #000;
-    background-attachment: scroll;
-    //background-image: url(../img/header-bg.jpg);
-    background-image: url(../img/Station_Square-3.jpg);
-    background-position: center 100px;
-    background-repeat: no-repeat;
+  text-align: center;
+  color: #000;
+  min-height: 300px;
+  @media(min-width:768px) {
+    min-height: 500px;
+  }
 }
 
 header .logo {
     margin: 0 auto;
-    width: 60%;
+    width: 80%;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    position: relative;
+    z-index: 1;
+    max-width: 310px;
+    @media(min-width:768px) {
+      width: 60%;
+      padding-top: 200px;
+      max-width: none;
+    }
     img {
       width: 100%;
     }
@@ -289,7 +326,7 @@ header .intro-text {
     padding-bottom: 50px;
 }
 
-header h1 {
+/*header h1 {
     margin-bottom: 25px;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 22px;
@@ -305,7 +342,7 @@ header h2 {
     font-size: 50px;
     font-weight: 700;
     line-height: 50px;
-}
+}*/
 
 @media(min-width:768px) {
     header .intro-text {
@@ -345,9 +382,21 @@ section h3 {
     margin-bottom: 75px;
     text-transform: none;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 16px;
+    font-size: 22px;
     font-style: italic;
     font-weight: 400;
+    line-height: 1.5;
+}
+
+.group-photo {
+  padding: 20px;
+  img {
+    width: 100%;
+    @media(min-width:992px) {
+      width: auto;
+      height: 300px;
+    }
+  }
 }
 
 @media(min-width:768px) {

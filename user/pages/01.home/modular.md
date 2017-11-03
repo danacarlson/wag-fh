@@ -9,9 +9,8 @@ content:
         dir: asc
         custom:
             - _header
-            - _services
-            - _portfolio
             - _about
+            - _actions
             - _team
             - _clients
 

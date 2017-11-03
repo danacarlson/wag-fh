@@ -1,34 +1,13 @@
 ---
 title: About
 menu: About
-abouts:
-    - img: 1.jpg
-      heading: 2009-2011
-      subheading: Our Humble Beginnings.
-      body: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-      align: image
-    - img: 2.jpg
-      heading: March 2011
-      subheading: An Agency is Born.
-      body: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur! 
-      align: inverted
-    - img: 3.jpg
-      heading: December 2012
-      subheading: Transition to Full Service.
-      body: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-      align: image
-    - img: 4.jpg
-      heading: July 2014
-      subheading: Phase Two Expansion.
-      body: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-      align: inverted 
-    - img: 
-      heading: 
-      alttext: Be Part<br />Of Our <br />Story!
-      subheading:
-      body:
-      align: inverted        
+class: small
+about:
+    - image: https://scontent-lga3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/16464302_1871163709831249_7289578675576504320_n.jpg
+      caption: First meeting December 2016
+    - image: https://scontent-lga3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/17586816_411313265905954_3331027178505633792_n.jpg
+      caption: Meeting with NY State Senator Grace Meng, March 2016
 ---
 
 ## About
-### Lorem ipsum dolor sit amet consectetur.
+### The Women’s Action Group of Forest Hills was founded after the election of the 45th President of the United States to join efforts towards getting Democrats and progressives elected at all levels of government, as well as to advocate for a woman’s right to affordable, local and comprehensive healthcare.
