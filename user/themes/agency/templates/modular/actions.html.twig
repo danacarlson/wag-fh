@@ -43,21 +43,20 @@
                         <div class="modal-body">
                             <h2>{{ actions.title }}</h2>
                             <hr class="star-primary">
-                            <img src="{{ page.media[actions.img].url }}" class="img-responsive img-centered" alt="{{ actions.alt }}">
+                            <div {%if actions.imgextra %}class="modal-images"{% endif %}>
+                                <img src="{{ page.media[actions.img].url }}" class="img-responsive img-centered" alt="{{ actions.alt }}">
+                                {% if actions.imgextra %}
+                                <img src="{{ page.media[actions.imgextra].url }}" class="img-responsive img-centered" alt="{{ actions.altextra }}">
+                                {% endif %}
+                            </div>
                             <p>{{ actions.description }}</p>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">{{ actions.client }}</a>
-                                    </strong>
-                                </li>
+
                                 <li>Date:
-                                    <strong><a href="http://startbootstrap.com">{{ actions.projectdate }}</a>
+                                    <strong>{{ actions.projectdate }}
                                     </strong>
                                 </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">{{ actions.category }}</a>
-                                    </strong>
-                                </li>
+
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>

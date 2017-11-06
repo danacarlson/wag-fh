@@ -96,38 +96,45 @@ class __TwigTemplate_69fc8cd56bdbfc6de56a9eb7ca4472b62198bcb887b1b2fb8fff730b99d
             echo $this->getAttribute($context["actions"], "title", array());
             echo "</h2>
                             <hr class=\"star-primary\">
-                            <img src=\"";
+                            <div ";
             // line 46
+            if ($this->getAttribute($context["actions"], "imgextra", array())) {
+                echo "class=\"modal-images\"";
+            }
+            echo ">
+                                <img src=\"";
+            // line 47
             echo $this->getAttribute($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", array()), $this->getAttribute($context["actions"], "img", array()), array(), "array"), "url", array());
             echo "\" class=\"img-responsive img-centered\" alt=\"";
             echo $this->getAttribute($context["actions"], "alt", array());
             echo "\">
+                                ";
+            // line 48
+            if ($this->getAttribute($context["actions"], "imgextra", array())) {
+                // line 49
+                echo "                                <img src=\"";
+                echo $this->getAttribute($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", array()), $this->getAttribute($context["actions"], "imgextra", array()), array(), "array"), "url", array());
+                echo "\" class=\"img-responsive img-centered\" alt=\"";
+                echo $this->getAttribute($context["actions"], "altextra", array());
+                echo "\">
+                                ";
+            }
+            // line 51
+            echo "                            </div>
                             <p>";
-            // line 47
+            // line 52
             echo $this->getAttribute($context["actions"], "description", array());
             echo "</p>
                             <ul class=\"list-inline item-details\">
-                                <li>Client:
-                                    <strong><a href=\"http://startbootstrap.com\">";
-            // line 50
-            echo $this->getAttribute($context["actions"], "client", array());
-            echo "</a>
-                                    </strong>
-                                </li>
+
                                 <li>Date:
-                                    <strong><a href=\"http://startbootstrap.com\">";
-            // line 54
+                                    <strong>";
+            // line 56
             echo $this->getAttribute($context["actions"], "projectdate", array());
-            echo "</a>
+            echo "
                                     </strong>
                                 </li>
-                                <li>Service:
-                                    <strong><a href=\"http://startbootstrap.com\">";
-            // line 58
-            echo $this->getAttribute($context["actions"], "category", array());
-            echo "</a>
-                                    </strong>
-                                </li>
+
                             </ul>
                             <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\"><i class=\"fa fa-times\"></i> Close</button>
                         </div>
@@ -155,7 +162,7 @@ class __TwigTemplate_69fc8cd56bdbfc6de56a9eb7ca4472b62198bcb887b1b2fb8fff730b99d
 
     public function getDebugInfo()
     {
-        return array (  127 => 58,  120 => 54,  113 => 50,  107 => 47,  101 => 46,  96 => 44,  80 => 32,  76 => 31,  69 => 26,  58 => 21,  54 => 20,  48 => 17,  39 => 11,  36 => 10,  32 => 9,  25 => 5,  19 => 1,);
+        return array (  133 => 56,  126 => 52,  123 => 51,  115 => 49,  113 => 48,  107 => 47,  101 => 46,  96 => 44,  80 => 32,  76 => 31,  69 => 26,  58 => 21,  54 => 20,  48 => 17,  39 => 11,  36 => 10,  32 => 9,  25 => 5,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -213,21 +220,20 @@ class __TwigTemplate_69fc8cd56bdbfc6de56a9eb7ca4472b62198bcb887b1b2fb8fff730b99d
                         <div class=\"modal-body\">
                             <h2>{{ actions.title }}</h2>
                             <hr class=\"star-primary\">
-                            <img src=\"{{ page.media[actions.img].url }}\" class=\"img-responsive img-centered\" alt=\"{{ actions.alt }}\">
+                            <div {%if actions.imgextra %}class=\"modal-images\"{% endif %}>
+                                <img src=\"{{ page.media[actions.img].url }}\" class=\"img-responsive img-centered\" alt=\"{{ actions.alt }}\">
+                                {% if actions.imgextra %}
+                                <img src=\"{{ page.media[actions.imgextra].url }}\" class=\"img-responsive img-centered\" alt=\"{{ actions.altextra }}\">
+                                {% endif %}
+                            </div>
                             <p>{{ actions.description }}</p>
                             <ul class=\"list-inline item-details\">
-                                <li>Client:
-                                    <strong><a href=\"http://startbootstrap.com\">{{ actions.client }}</a>
-                                    </strong>
-                                </li>
+
                                 <li>Date:
-                                    <strong><a href=\"http://startbootstrap.com\">{{ actions.projectdate }}</a>
+                                    <strong>{{ actions.projectdate }}
                                     </strong>
                                 </li>
-                                <li>Service:
-                                    <strong><a href=\"http://startbootstrap.com\">{{ actions.category }}</a>
-                                    </strong>
-                                </li>
+
                             </ul>
                             <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\"><i class=\"fa fa-times\"></i> Close</button>
                         </div>
