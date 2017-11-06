@@ -12,7 +12,8 @@
               <ul class="{{ categories.class }}">
               {% if categories.group %}
                 {% for group in categories.group %}
-                  <li>{{ group.header }}
+                  <li><i class="fa fa-circle" aria-hidden="true"></i>
+                  <b class="subhead">{{ group.header }}</b>
                       {% for contacts in group.contacts %}
                       <ul>
                         <li>{{ contacts.name}}</li>

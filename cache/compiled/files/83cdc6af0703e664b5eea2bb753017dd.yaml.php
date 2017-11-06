@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/mattanddana/Documents/MAMPWebsites/user/config/site.yaml',
-    'modified' => 1509978916,
+    'modified' => 1510002224,
     'data' => [
         'title' => 'WAGFH',
         'default_lang' => 'en',
@@ -66,24 +66,6 @@ return [
             4 => [
                 'title' => 'github',
                 'url' => 'http://github.com/jekyll'
-            ]
-        ],
-        'address' => [
-            0 => [
-                'line' => '3481 Melrose Place'
-            ],
-            1 => [
-                'line' => 'Beverly Hills, CA 90210'
-            ]
-        ],
-        'quicklinks' => [
-            0 => [
-                'title' => 'Privacy Policy',
-                'url' => '#'
-            ],
-            1 => [
-                'title' => 'Terms of Use',
-                'url' => '#'
             ]
         ]
     ]

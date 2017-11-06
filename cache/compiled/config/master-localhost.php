@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1509978950,
-    'checksum' => 'af2f17df99f2331b0a01193118298e61',
+    'timestamp' => 1510002336,
+    'checksum' => '8300ce8299f6be8955fc15cf41b59336',
     'files' => [
         'user/config' => [
             'media' => [
@@ -15,7 +15,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1509978916
+                'modified' => 1510002224
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -558,24 +558,6 @@ return [
                 4 => [
                     'title' => 'github',
                     'url' => 'http://github.com/jekyll'
-                ]
-            ],
-            'address' => [
-                0 => [
-                    'line' => '3481 Melrose Place'
-                ],
-                1 => [
-                    'line' => 'Beverly Hills, CA 90210'
-                ]
-            ],
-            'quicklinks' => [
-                0 => [
-                    'title' => 'Privacy Policy',
-                    'url' => '#'
-                ],
-                1 => [
-                    'title' => 'Terms of Use',
-                    'url' => '#'
                 ]
             ]
         ],

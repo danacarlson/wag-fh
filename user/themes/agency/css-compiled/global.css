@@ -5703,10 +5703,7 @@ aside.clients img {
   margin: 50px auto; }
 
 section#contact {
-  background-color: #222;
-  background-image: url(../img/map-image.png);
-  background-position: center;
-  background-repeat: no-repeat; }
+  background-color: #333; }
 
 section#contact h2 {
   color: #fff; }
@@ -5763,7 +5760,8 @@ footer span.copyright {
   text-transform: uppercase;
   text-transform: none;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  line-height: 40px; }
+  line-height: 40px;
+  color: #777; }
 
 footer ul.quicklinks {
   margin-bottom: 0;
@@ -5893,8 +5891,13 @@ body {
   margin: 0;
   padding: 0; }
   .resources ul ul {
-    margin-left: 10px;
     margin-bottom: 10px; }
+
+.resources .list-group li {
+  padding-left: 20px; }
+
+.resources .list-group ul li {
+  padding-left: 0; }
 
 @media (min-width: 768px) {
   .resources .list-group > li {
@@ -5905,3 +5908,25 @@ body {
 
 .resources a {
   color: #11887D; }
+
+.resources .fa-circle {
+  color: #fed136;
+  margin-left: -20px;
+  position: absolute;
+  margin-top: 2px; }
+
+#contact {
+  color: #fff; }
+  #contact ul, #contact li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 18px; }
+  #contact ul {
+    margin-top: 30px; }
+  #contact li {
+    text-align: center; }
+  #contact .fa {
+    font-size: 36px; }
+  #contact a:hover, #contact a:focus {
+    color: #fff; }
