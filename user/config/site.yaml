@@ -1,47 +1,60 @@
 title: WAGFH
+default_lang: en
 author:
-  name: Joe Bloggs
-  email: 'joe@test.com'
+  name: 'WAG Admin'
+  email: wag@wag.com
+taxonomies:
+  - category
+  - tag
 metadata:
-    description: 'Grav is an easy to use, yet powerful, open source flat-file CMS'
-
-# Site settings
-title: Awesome Title
+  description: 'Womens'' Action Group of Forest Hills'
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: '==='
+blog:
+  route: /blog
 email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-
-# Links to include in footer navigation
-# For external links add external: true
+description: 'Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.'
 links:
-  - title: About
+  -
+    title: About
     url: '#about'
-  - title: Actions
+  -
+    title: Actions
     url: '#actions'
-  - title: Resources
+  -
+    title: Resources
     url: '#resources'
-  - title: Contact
+  -
+    title: Contact
     url: '#contact'
-
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: twitter
-    url: http://twitter.com/jekyllrb
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket
-    url: http://bitbucket.org/jekyll
-  - title: github
-    url: http://github.com/jekyll
-
-# Postal address (add as many lines as necessary)
+  -
+    title: twitter
+    url: 'http://twitter.com/jekyllrb'
+  -
+    title: facebook
+    url: null
+  -
+    title: stack-overflow
+    url: 'http://stackoverflow.com/questions/tagged/jekyll'
+  -
+    title: bitbucket
+    url: 'http://bitbucket.org/jekyll'
+  -
+    title: github
+    url: 'http://github.com/jekyll'
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
-
+  -
+    line: '3481 Melrose Place'
+  -
+    line: 'Beverly Hills, CA 90210'
 quicklinks:
-  - title: Privacy Policy
+  -
+    title: 'Privacy Policy'
     url: '#'
-  - title: Terms of Use
+  -
+    title: 'Terms of Use'
     url: '#'

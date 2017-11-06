@@ -1,0 +1,36 @@
+<section id="resources" class="resources">
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            {{ content }}
+        </div>
+    </div>
+    <div class="row">
+        {% for categories in page.header.categories %}
+            <div class="col-sm-{% if categories.group %}7{% else %}5{% endif %}">
+              <h5>{{ categories.header }}</h5>
+              <ul class="{{ categories.class }}">
+              {% if categories.group %}
+                {% for group in categories.group %}
+                  <li>{{ group.header }}
+                      {% for contacts in group.contacts %}
+                      <ul>
+                        <li>{{ contacts.name}}</li>
+                        <li><a href="tel:{{ contacts.digits }}">{{contacts.call}}</a></li>
+                        <li><a href="{{ contacts.email }}">Email</a></li>
+                      </ul>
+                      {% endfor %}
+                  </li>
+                {% endfor %}
+              {% endif %}
+              {% if categories.links %}
+                {% for links in categories.links %}
+                  <li><a href="{{ links.url }}">{{ links.name }}</a></li>
+                {% endfor %}
+              {% endif %}
+              </ul>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

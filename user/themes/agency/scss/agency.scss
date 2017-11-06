@@ -257,11 +257,18 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default .navbar-nav>.active>a {
         border-radius: 3px;
+        color: #fff !important;
     }
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color: #222;
+        background-color: #222 !important;
+        .nav li a {
+          color: #777;
+          &:hover, &:focus {
+            color: $primary;
+          }
+        }
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
@@ -397,12 +404,6 @@ section h3 {
       height: 300px;
     }
   }
-}
-
-@media(min-width:768px) {
-    section {
-        padding: 150px 0;
-    }
 }
 
 .service-heading {
@@ -931,4 +932,32 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: $primary;
+}
+
+.resources {
+    h5 {
+        margin-top: 30px;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        ul {
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+    }
+    @media(min-width:768px) {
+        .list-group > li {
+            float: left;
+            width: 50%;
+            &:nth-child(3) {
+                clear: left;
+            }
+        }
+    }
+    a {
+        color: #11887D;
+    }
+
 }

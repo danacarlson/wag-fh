@@ -5338,10 +5338,15 @@ fieldset[disabled] .btn-xl.active {
     -moz-transition: all .3s;
     transition: all .3s; }
   .navbar-default .navbar-nav > .active > a {
-    border-radius: 3px; }
+    border-radius: 3px;
+    color: #fff !important; }
   .navbar-default.navbar-shrink {
     padding: 10px 0;
-    background-color: #222; }
+    background-color: #222 !important; }
+    .navbar-default.navbar-shrink .nav li a {
+      color: #777; }
+      .navbar-default.navbar-shrink .nav li a:hover, .navbar-default.navbar-shrink .nav li a:focus {
+        color: #fed136; }
   .navbar-default.navbar-shrink .navbar-brand {
     font-size: 1.5em; } }
 
@@ -5456,10 +5461,6 @@ section h3 {
       .group-photo img {
         width: auto;
         height: 300px; } }
-
-@media (min-width: 768px) {
-  section {
-    padding: 150px 0; } }
 
 .service-heading {
   margin: 15px 0;
@@ -5883,3 +5884,24 @@ img::-moz-selection {
 
 body {
   webkit-tap-highlight-color: #fed136; }
+
+.resources h5 {
+  margin-top: 30px; }
+
+.resources ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  .resources ul ul {
+    margin-left: 10px;
+    margin-bottom: 10px; }
+
+@media (min-width: 768px) {
+  .resources .list-group > li {
+    float: left;
+    width: 50%; }
+    .resources .list-group > li:nth-child(3) {
+      clear: left; } }
+
+.resources a {
+  color: #11887D; }
