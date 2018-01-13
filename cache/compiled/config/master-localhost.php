@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1510002336,
-    'checksum' => '8300ce8299f6be8955fc15cf41b59336',
+    'timestamp' => 1515878220,
+    'checksum' => 'da4c81a8f9bc35911f8f095fa3afd747',
     'files' => [
         'user/config' => [
             'media' => [
@@ -29,29 +29,29 @@ return [
         'system/config' => [
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1509673440
+                'modified' => 1515877814
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1509673440
+                'modified' => 1515877814
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1509673440
+                'modified' => 1515877814
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1509673440
+                'modified' => 1515877814
             ]
         ],
         'user/plugins' => [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1509977278
+                'modified' => 1515878217
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
-                'modified' => 1509813700
+                'modified' => 1515878206
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
@@ -59,11 +59,11 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1509813700
+                'modified' => 1515878213
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1509977272
+                'modified' => 1515878210
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
@@ -187,31 +187,9 @@ return [
                 'route_profile' => '/user_profile',
                 'route_register' => '/user_register',
                 'route_unauthorized' => '/user_unauthorized',
+                'dynamic_page_visibility' => false,
                 'parent_acl' => false,
                 'protect_protected_page_media' => false,
-                'user_registration' => [
-                    'enabled' => true,
-                    'fields' => [
-                        0 => 'username',
-                        1 => 'password',
-                        2 => 'email',
-                        3 => 'fullname',
-                        4 => 'title'
-                    ],
-                    'access' => [
-                        'site' => [
-                            'login' => 'true'
-                        ]
-                    ],
-                    'options' => [
-                        'validate_password1_and_password2' => true,
-                        'set_user_disabled' => false,
-                        'login_after_registration' => true,
-                        'send_activation_email' => false,
-                        'send_notification_email' => false,
-                        'send_welcome_email' => false
-                    ]
-                ],
                 'rememberme' => [
                     'enabled' => true,
                     'timeout' => 604800,
@@ -220,7 +198,35 @@ return [
                 'max_pw_resets_count' => 0,
                 'max_pw_resets_interval' => 60,
                 'max_login_count' => 0,
-                'max_login_interval' => 2
+                'max_login_interval' => 2,
+                'user_registration' => [
+                    'enabled' => true,
+                    'fields' => [
+                        0 => 'username',
+                        1 => 'password',
+                        2 => 'email',
+                        3 => 'fullname',
+                        4 => 'title',
+                        5 => 'level'
+                    ],
+                    'default_values' => [
+                        'level' => 'Newbie'
+                    ],
+                    'access' => [
+                        'site' => [
+                            'login' => 'true'
+                        ]
+                    ],
+                    'redirect_after_registration' => '',
+                    'options' => [
+                        'validate_password1_and_password2' => true,
+                        'set_user_disabled' => false,
+                        'login_after_registration' => true,
+                        'send_activation_email' => false,
+                        'send_notification_email' => false,
+                        'send_welcome_email' => false
+                    ]
+                ]
             ],
             'problems' => [
                 'enabled' => true,
@@ -592,9 +598,11 @@ return [
             'wrapped_site' => false,
             'reverse_proxy_setup' => false,
             'force_ssl' => false,
+            'force_lowercase_urls' => true,
             'custom_base_url' => '',
             'username_regex' => '^[a-z0-9_-]{3,16}$',
             'pwd_regex' => '(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{8,}',
+            'intl_enabled' => true,
             'languages' => [
                 'supported' => [
                     

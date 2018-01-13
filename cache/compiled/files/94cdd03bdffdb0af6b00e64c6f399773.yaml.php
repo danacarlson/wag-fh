@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/mattanddana/Documents/MAMPWebsites/user/plugins/form/blueprints.yaml',
-    'modified' => 1509813700,
+    'modified' => 1515878213,
     'data' => [
         'name' => 'Form',
-        'version' => '2.10.0',
+        'version' => '2.11.1',
         'description' => 'Enables the forms handling',
         'icon' => 'check-square',
         'author' => [
@@ -20,7 +20,7 @@ return [
         'dependencies' => [
             0 => [
                 'name' => 'grav',
-                'version' => '>=1.3.5'
+                'version' => '>=1.3.9'
             ]
         ],
         'form' => [

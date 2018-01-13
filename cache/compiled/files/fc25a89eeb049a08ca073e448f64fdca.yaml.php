@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/mattanddana/Documents/MAMPWebsites/system/languages/hu.yaml',
-    'modified' => 1509673441,
+    'modified' => 1515877814,
     'data' => [
         'FRONTMATTER_ERROR_PAGE' => '---
 cím: %1$s

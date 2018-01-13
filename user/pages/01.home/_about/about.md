@@ -15,3 +15,5 @@ about:
 ## About
 ### The Women’s Action Group of Forest Hills was founded after the election of the 45th President of the United States to join efforts towards getting Democrats and progressives elected at all levels of government, as well as to advocate for a woman’s right to affordable, local and comprehensive healthcare.
 
+## Mission Statement 
+### We stand for women’s rights, reproductive justice, and civic engagement. We are dedicated to supporting local and national organizations and elected officials committed to achieving a more equitable world.
