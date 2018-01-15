@@ -5,6 +5,7 @@
             {{ content }}
         </div>
     </div>
+
     <div class="row">
         {% for categories in page.header.categories %}
             <div class="col-sm-{% if categories.group %}7{% else %}5{% endif %}">
@@ -31,7 +32,20 @@
               {% endif %}
               </ul>
             </div>
-            {% endfor %}
-        </div>
+        {% endfor %}
     </div>
+
+    <div class="row social-embeds">
+      <div class="col-sm-5">
+        <b class="subhead"><i class="fa fa-twitter" aria-hidden="true"></i> @WomensActionFH</b>
+        <div class="inner-embed">
+          <a class="twitter-timeline" href="https://twitter.com/WomensActionFH?ref_src=twsrc%5Etfw">Tweets by WomensActionFH</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </div>
+      <div class="col-sm-5 col-sm-offset-1">
+        <b class="subhead"><i class="fa fa-instagram" aria-hidden="true"></i> @womensactiongroupofforesthills</b>
+        {{ instagram_feed() }}
+      </div>
+    </div>
+  </div>
 </section>
