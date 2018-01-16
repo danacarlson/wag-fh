@@ -30,19 +30,17 @@ links:
   -
     title: Contact
     url: '#contact'
-social:
+actionlinks:
   -
-    title: twitter
-    url: 'http://twitter.com/jekyllrb'
+    title: About
+    url: '/#about'
   -
-    title: facebook
-    url: null
+    title: Actions
+    url: '/#actions'
   -
-    title: stack-overflow
-    url: 'http://stackoverflow.com/questions/tagged/jekyll'
+    title: Resources
+    url: '/#resources'
   -
-    title: bitbucket
-    url: 'http://bitbucket.org/jekyll'
-  -
-    title: github
-    url: 'http://github.com/jekyll'
+    title: Contact
+    url: '/#contact'
+

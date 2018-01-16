@@ -5643,6 +5643,9 @@ section h3 {
   margin: 15px 0;
   text-transform: none; }
 
+#actions h2 {
+  margin-bottom: 45px; }
+
 #actions .portfolio-item {
   right: 0;
   margin: 0 0 15px; }
@@ -5651,7 +5654,8 @@ section h3 {
   display: block;
   position: relative;
   margin: 0 auto;
-  max-width: 400px; }
+  max-width: 400px;
+  background: #ffffff; }
 
 #actions .portfolio-item .portfolio-link .portfolio-hover {
   position: absolute;
@@ -5691,10 +5695,11 @@ section h3 {
 
 #actions .portfolio-item .portfolio-caption {
   margin: 0 auto;
-  padding: 25px;
+  padding: 25px 15px 0 15px;
   max-width: 400px;
   text-align: center;
-  background-color: #fff; }
+  background-color: #fff;
+  min-height: 120px; }
 
 #actions .portfolio-item .portfolio-caption h4 {
   margin: 0;

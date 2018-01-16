@@ -1,6 +1,6 @@
 ---
 title: Actions
-media_order: 'dreams-thumbnail.png,dreams.png,escape-thumbnail.png,escape.png,golden-thumbnail.png,golden.png,roundicons-thumbnail.png,roundicons.png,startup-framework-thumbnail.png,startup-framework.png,treehouse-thumbnail.png,treehouse.png,choices_thumb.jpg'
+media_order: choices_thumb.jpg
 menu: Actions
 actions:
     -
@@ -17,19 +17,64 @@ actions:
         projectdate: 'Sept/Oct 2017'
         description: 'A couple of months ago WAG became aware of a lawsuit that Attorney General Eric Schneiderman was bringing against a group of people who had been standing outside and harassing the clients of Choices Womens Medical Center. We sent a letter to thank @agschneiderman, but felt strongly that we also needed to support the staff of Choices for their daily commitment to reproductive healthcare. WAG members Liz Chase and Jody Peckett visited @choiceswomensmedical this week to deliver those gifts (a Keurig, water cooler, and microwave) for the staff. We were treated to a tour of their fantastic facilities by Administrator Kelly Mallinson and got to meet and chat with the founder and CEO, Merle Hoffman. Merle is a true warrior and has been fighting for women''s reproductive healthcare for over 40 years! It was an honor to meet both of these inspiring women and their amazing staff. Looking forward to a long and productive relationship with these women and their extraordinary facility! Thank you Choices'
     -
-        title: Escape
-        subtitle: 'Website Design'
+        title: 'Karen Koslowitz Signatures'
+        subtitle: Political
         layout: default
         modalid: 2
         date: 1405555200
-        img: escape.png
-        thumbnail: escape-thumbnail.png
-        alt: image-alt
-        projectdate: 'April 2014'
-        client: 'Start Bootstrap'
-        category: 'Web Development'
-        description: 'Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim  . Cu eum dicam feugiat noluisse.'
-
+        img: koslowitz-lg1.jpg
+        imgextra: koslowitz-lg2.jpg
+        thumbnail: koslowitz-thumb.jpg
+        alt: ''
+        altextra: ''
+        projectdate: 'June 2017'
+        description: 'In the summer of 2017, members of WAG collected signatures for Karen Koslowitz''s petitions to be an incumbent on the ballot for her New York City Council seat. We helped Councilwoman Koslowitz''s office collect over 100 signatures.'
+    -
+        title: 'Postcards for Virginia'
+        subtitle: Political
+        layout: default
+        modalid: 3
+        img: postcards_va_lg.jpg
+        thumbnail: postcards-va-thumb.jpg
+        alt: ''
+        altextra: ''
+        projectdate: 'June 2017'
+        description: 'WAG members are helping to get out the vote in Virginia by participating in #postcards4va #persist #wagfh #virginiaisforvoters @postcards4va'
+    -
+        title: Bookclub
+        subtitle: Education
+        layout: default
+        modalid: 4
+        img: book-thumb.jpg
+        thumbnail: book-thumb.jpg
+        alt: ''
+        altextra: ''
+        projectdate: Ongoing
+        description: 'Members of WAG have come together in a book club in order to explore and understand issues of race and privilege in our communities and our own lives. Our group began with <i>Waking Up White</i> by Debby Irving. We have continued to select texts that we believe can inform and expand our understandings of race and privilege.'
+    -
+        title: 'Forest Hills Activist Fair'
+        subtitle: Education
+        layout: default
+        modalid: 5
+        img: activist-fair-lg.jpg
+        imgextra: activist-fair-lg2.jpg
+        thumbnail: activist-fair-thumb.jpg
+        alt: ''
+        altextra: ''
+        projectdate: 'May 2017'
+        description: 'WAG volunteers represented our group at the Forest Hills Activism Fair coordinated by Congresswoman Grace Meng.'
+    -
+        title: 'Ides of Trump Postcard Initiative'
+        subtitle: Political
+        layout: default
+        modalid: 6
+        img: ides-lg1.jpg
+        imgextra: ides-lg-2.jpg
+        thumbnail: ides-thumb.jpg
+        alt: ''
+        altextra: ''
+        projectdate: 'March 2017'
+        description: 'Over 300 postcards delivered to President 45 telling it like it is. <a href="https://www.facebook.com/TheIdesOfTrump/">https://www.facebook.com/TheIdesOfTrump/</a>'
 ---
 
 ## Actions

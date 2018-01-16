@@ -7,7 +7,7 @@
     </div>
     <div class="row">
         {% for actions in page.header.actions %}
-            <div class="col-md-4 col-sm-6 portfolio-item">
+            <div class="col-md-3 col-sm-6 portfolio-item">
                 <a href="#portfolioModal{{ actions.modalid }}" class="portfolio-link" data-toggle="modal">
                     <div class="portfolio-hover">
                         <div class="portfolio-hover-content">
@@ -23,6 +23,7 @@
             </div>
 
         {% endfor %}
+        <a href="/actions/">View All</a>
     </div>
 </div>
 </section>
