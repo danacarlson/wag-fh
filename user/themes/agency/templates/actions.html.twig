@@ -43,5 +43,40 @@
 {% endblock %}
 
 {% block content %}
+<div class="container" id="page-actions">
+    <div class="row" >
+        <div class="col-sm-offset-1 col-sm-10 text-center">
+            <h2>WAG Actions</h2>
+        </div>
+    </div>
+    {% for actions in page.header.actions %}
+    <div class="row wag-action">
+
+        <div class="col-lg-8 col-lg-offset-2">
+            <div>
+                <h4>{{ actions.title }}</h4>
+                <hr class="star-primary">
+                <div {%if actions.imgextra %}class="double"{% endif %}>
+                    <img src="/user/pages/01.home/_actions/{{ actions.img }}" class="img-responsive img-centered" alt="{{ actions.alt }}">
+                    {% if actions.imgextra %}
+                    <img src="/user/pages/01.home/_actions/{{ actions.imgextra }}" class="img-responsive img-centered" alt="{{ actions.altextra }}">
+                    {% endif %}
+                </div>
+                <p>{{ actions.description }}</p>
+                <ul class="list-inline item-details">
+
+                    <li>Date:
+                        <strong>{{ actions.projectdate }}
+                        </strong>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+    {% endfor %}
+</div>
     {{ page.content }}
 {% endblock %}

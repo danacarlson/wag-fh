@@ -5657,7 +5657,7 @@ section h3 {
   max-width: 400px;
   background: #ffffff; }
 
-#actions .portfolio-item .portfolio-link .portfolio-hover {
+#actions .portfolio-item .portfolio-hover {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -5669,10 +5669,10 @@ section h3 {
   /* Fallback when no plugin support */
   background: rgba(254, 209, 54, 0.9); }
 
-#actions .portfolio-item .portfolio-link .portfolio-hover:hover {
+#actions .portfolio-item .portfolio-hover:hover {
   opacity: 1; }
 
-#actions .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+#actions .portfolio-item .portfolio-hover .portfolio-hover-content {
   position: absolute;
   top: 50%;
   width: 100%;
@@ -5682,7 +5682,7 @@ section h3 {
   font-size: 20px;
   color: #fff; }
 
-#actions .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+#actions .portfolio-item .portfolio-hover .portfolio-hover-content i {
   margin-top: -12px; }
 
 #actions .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
@@ -6264,5 +6264,28 @@ body {
   height: 500px;
   overflow-y: scroll;
   border: 2px solid #fec503; }
+
+#page-actions {
+  margin-top: 100px; }
+
+.view-all-inner {
+  background: #ffffff;
+  height: 300px;
+  display: block;
+  text-align: center; }
+  .view-all-inner:hover {
+    background: #fed136; }
+    .view-all-inner:hover h4 {
+      text-decoration: none; }
+  .view-all-inner h4 {
+    margin: 0;
+    padding-top: 120px;
+    color: #333; }
+
+.wag-action {
+  margin-top: 30px; }
+  .wag-action img {
+    max-width: 200px;
+    padding: 20px; }
 
 /*# sourceMappingURL=global.css.map */

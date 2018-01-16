@@ -433,7 +433,7 @@ section h3 {
     background: #ffffff;
 }
 
-#actions .portfolio-item .portfolio-link .portfolio-hover {
+#actions .portfolio-item .portfolio-hover {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -445,11 +445,11 @@ section h3 {
     background: rgba($primary, .9);
 }
 
-#actions .portfolio-item .portfolio-link .portfolio-hover:hover {
+#actions .portfolio-item  .portfolio-hover:hover {
     opacity: 1;
 }
 
-#actions .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+#actions .portfolio-item  .portfolio-hover .portfolio-hover-content {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -460,7 +460,7 @@ section h3 {
     color: #fff;
 }
 
-#actions .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+#actions .portfolio-item  .portfolio-hover .portfolio-hover-content i {
     margin-top: -12px;
 }
 
@@ -1241,4 +1241,36 @@ body {
         overflow-y:scroll;
         border: 2px solid $secondary;
     }
+}
+
+#page-actions {
+    margin-top: 100px;
+}
+
+.view-all-inner {
+    background: #ffffff;
+    height: 300px;
+    display: block;
+    text-align: center;
+    &:hover {
+        background: $primary;
+        h4 {
+            text-decoration: none;
+        }
+    }
+    h4 {
+        margin: 0;
+        padding-top: 120px;
+        color: $secondary-dark;
+    }
+}
+
+.wag-action {
+    margin-top: 30px;
+
+    img {
+        max-width: 200px;
+        padding: 20px;
+    }
+
 }

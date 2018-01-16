@@ -75,6 +75,18 @@ actions:
         altextra: ''
         projectdate: 'March 2017'
         description: 'Over 300 postcards delivered to President 45 telling it like it is. <a href="https://www.facebook.com/TheIdesOfTrump/">https://www.facebook.com/TheIdesOfTrump/</a>'
+    -
+        title: 'Ides of Trump Postcard Initiative'
+        subtitle: Political
+        layout: default
+        modalid: 7
+        img: ides-lg1.jpg
+        imgextra: ides-lg-2.jpg
+        thumbnail: ides-thumb.jpg
+        alt: ''
+        altextra: ''
+        projectdate: 'March 2017'
+        description: 'Over 300 postcards delivered to President 45 telling it like it is. <a href="https://www.facebook.com/TheIdesOfTrump/">https://www.facebook.com/TheIdesOfTrump/</a>'
 ---
 
 ## Actions

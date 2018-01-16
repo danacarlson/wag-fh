@@ -14,10 +14,13 @@ categories:
                 contacts: [{ name: 'Grace Meng', digits: 202-225-2601, call: '(202) 225-2601', email: 'https://meng.house.gov/contact' }]
             -
                 header: 'NY Senate'
-                contacts: [{ name: 'Joseph P. Addabbo Jr', digits: 518-455-2322, call: '(518) 455-2322', email: 'https://www.nysenate.gov/senators/joseph-p-addabbo-jr/contact' }]
+                contacts: [{ name: 'Joseph P. Addabbo Jr', digits: 518-455-2322, call: '(518) 455-2322', email: 'https://www.nysenate.gov/senators/joseph-p-addabbo-jr/contact' }, { name: 'Toby Ann Stavisky', digits: 718-445-0004, call: '(718) 445-0004', email: 'https://www.nysenate.gov/registration/nojs/form/start/message-senator?senator=4518481' }]
             -
                 header: 'NY Assembly'
                 contacts: [{ name: 'Andrew Hevesi', digits: 518-455-4926, call: '(518) 455-4926', email: 'http://nyassembly.gov/mem/Andrew-Hevesi/contact' }]
+            -
+                header: 'NY Councilwoman'
+                contacts: [{ name: 'Karen Koslowitz', digits: 718-544-8800, call: '(718) 544-8800', email: 'mailto:Koslowitz@council.nyc.gov' }]
     -
         header: 'Research / Get Involved / Donate'
         links:
@@ -36,6 +39,12 @@ categories:
             -
                 name: 'Miry''s List'
                 url: 'https://miryslist.org/'
+    -
+        header: 'PDF Download'
+        links:
+            -
+                name: '<i class="fa fa-file-pdf-o" aria-hidden="true"></i> Your Representatives'
+                url: /user/pages/01.home/_resources/WAG.pdf
 ---
 
 ## Resources
