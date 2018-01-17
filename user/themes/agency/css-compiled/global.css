@@ -6285,7 +6285,7 @@ body {
 .wag-action {
   margin-top: 30px; }
   .wag-action img {
-    max-width: 200px;
+    max-height: 300px;
     padding: 20px; }
 
 /*# sourceMappingURL=global.css.map */

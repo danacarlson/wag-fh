@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/mattanddana/Documents/MAMPWebsites/user/config/site.yaml',
-    'modified' => 1510002224,
+    'modified' => 1516055388,
     'data' => [
         'title' => 'WAGFH',
         'default_lang' => 'en',
@@ -46,26 +46,22 @@ return [
                 'url' => '#contact'
             ]
         ],
-        'social' => [
+        'actionlinks' => [
             0 => [
-                'title' => 'twitter',
-                'url' => 'http://twitter.com/jekyllrb'
+                'title' => 'About',
+                'url' => '/#about'
             ],
             1 => [
-                'title' => 'facebook',
-                'url' => NULL
+                'title' => 'Actions',
+                'url' => '/#actions'
             ],
             2 => [
-                'title' => 'stack-overflow',
-                'url' => 'http://stackoverflow.com/questions/tagged/jekyll'
+                'title' => 'Resources',
+                'url' => '/#resources'
             ],
             3 => [
-                'title' => 'bitbucket',
-                'url' => 'http://bitbucket.org/jekyll'
-            ],
-            4 => [
-                'title' => 'github',
-                'url' => 'http://github.com/jekyll'
+                'title' => 'Contact',
+                'url' => '/#contact'
             ]
         ]
     ]

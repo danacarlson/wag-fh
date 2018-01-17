@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1515878220,
-    'checksum' => '6e47473be4311eca78c40aa041beab58',
+    'timestamp' => 1515974789,
+    'checksum' => '703db8b3c87cc9e4d315c0e65af6f601',
     'files' => [
         'system/blueprints/config' => [
             'media' => [
@@ -39,6 +39,14 @@ return [
                 'file' => 'user/plugins/form/blueprints.yaml',
                 'modified' => 1515878213
             ],
+            'plugins/instagram-feed' => [
+                'file' => 'user/plugins/instagram-feed/blueprints.yaml',
+                'modified' => 1515972936
+            ],
+            'plugins/lightslider' => [
+                'file' => 'user/plugins/lightslider/blueprints.yaml',
+                'modified' => 1515974630
+            ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/blueprints.yaml',
                 'modified' => 1515878210
@@ -46,6 +54,10 @@ return [
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/blueprints.yaml',
                 'modified' => 1509813701
+            ],
+            'plugins/social-feed' => [
+                'file' => 'user/plugins/social-feed/blueprints.yaml',
+                'modified' => 1515960272
             ]
         ]
     ],
@@ -2719,6 +2731,341 @@ return [
                 'name' => 'plugins.form.recaptcha.secret_key',
                 'validation' => 'strict'
             ],
+            'plugins.instagram-feed' => [
+                'type' => '_root',
+                'form_field' => false,
+                'form' => [
+                    'validation' => 'strict'
+                ]
+            ],
+            'plugins.instagram-feed.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Plugin status',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.instagram-feed.enabled',
+                'validation' => 'strict'
+            ],
+            'plugins.instagram-feed.instagram_feed' => [
+                'type' => 'section',
+                'text' => 'Settings',
+                'underline' => true,
+                'name' => 'plugins.instagram-feed.instagram_feed',
+                'validation' => 'strict'
+            ],
+            'plugins.instagram-feed.instagram_feed.count' => [
+                'type' => 'text',
+                'size' => 'small',
+                'label' => 'Amount of Images to show',
+                'default' => 10.0,
+                'valdiate' => [
+                    'type' => 'number',
+                    'min' => 1,
+                    'max' => 20
+                ],
+                'name' => 'plugins.instagram-feed.instagram_feed.count',
+                'validation' => 'strict'
+            ],
+            'plugins.instagram-feed.instagram_feed.username' => [
+                'type' => 'text',
+                'size' => 'small',
+                'label' => 'Instagram Username',
+                'name' => 'plugins.instagram-feed.instagram_feed.username',
+                'validation' => 'strict'
+            ],
+            'plugins.instagram-feed.instagram_feed.cache_expires' => [
+                'type' => 'text',
+                'size' => 'small',
+                'label' => 'Seconds to cache the feed',
+                'default' => 300.0,
+                'validate' => [
+                    'type' => 'number',
+                    'min' => 300,
+                    'max' => 60000
+                ],
+                'name' => 'plugins.instagram-feed.instagram_feed.cache_expires',
+                'validation' => 'strict'
+            ],
+            'plugins.lightslider' => [
+                'type' => '_root',
+                'form_field' => false,
+                'form' => [
+                    'validation' => 'strict'
+                ]
+            ],
+            'plugins.lightslider.enabled' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_ADMIN.PLUGIN_STATUS',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.lightslider.enabled',
+                'validation' => 'strict'
+            ],
+            'plugins.lightslider.built_in_css' => [
+                'type' => 'toggle',
+                'label' => 'Use built in CSS',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.lightslider.built_in_css',
+                'validation' => 'strict'
+            ],
+            'plugins.lightslider.slider_type' => [
+                'type' => 'toggle',
+                'label' => 'Slider Type',
+                'highlight' => 1,
+                'default' => 'text',
+                'options' => [
+                    'text' => 'Text',
+                    'image' => 'Image'
+                ],
+                'name' => 'plugins.lightslider.slider_type',
+                'validation' => 'strict'
+            ],
+            'plugins.lightslider.type_text_height' => [
+                'type' => 'text',
+                'size' => 'x-small',
+                'label' => 'Type Text Height',
+                'default' => 'auto',
+                'name' => 'plugins.lightslider.type_text_height',
+                'validation' => 'strict'
+            ],
+            'plugins.lightslider.type_text_vertical_padding' => [
+                'type' => 'text',
+                'size' => 'x-small',
+                'label' => 'Type Text Vertical Padding',
+                'default' => '80px',
+                'name' => 'plugins.lightslider.type_text_vertical_padding',
+                'validation' => 'strict'
+            ],
+            'plugins.lightslider.type_text_horizontal_padding' => [
+                'type' => 'text',
+                'size' => 'x-small',
+                'label' => 'Type Text Horizontal Padding',
+                'default' => '50px',
+                'name' => 'plugins.lightslider.type_text_horizontal_padding',
+                'validation' => 'strict'
+            ],
+            'plugins.lightslider.type_text_brightness' => [
+                'type' => 'text',
+                'size' => 'x-small',
+                'label' => 'Type Text Brightness',
+                'default' => 0,
+                'name' => 'plugins.lightslider.type_text_brightness',
+                'validation' => 'strict'
+            ],
+            'plugins.lightslider.item' => [
+                'type' => 'text',
+                'size' => 'x-small',
+                'label' => 'Item',
+                'default' => 1,
+                'name' => 'plugins.lightslider.item',
+                'validation' => 'strict'
+            ],
+            'plugins.lightslider.slideMove' => [
+                'type' => 'text',
+                'size' => 'x-small',
+                'label' => 'Slide Move',
+                'default' => 1,
+                'name' => 'plugins.lightslider.slideMove',
+                'validation' => 'strict'
+            ],
+            'plugins.lightslider.slideMargin' => [
+                'type' => 'text',
+                'size' => 'x-small',
+                'label' => 'Slide Margin',
+                'default' => 0,
+                'name' => 'plugins.lightslider.slideMargin',
+                'validation' => 'strict'
+            ],
+            'plugins.lightslider.loop' => [
+                'type' => 'toggle',
+                'label' => 'Loop',
+                'highlight' => true,
+                'default' => 'false',
+                'options' => [
+                    'true' => 'Enabled',
+                    'false' => 'Disabled'
+                ],
+                'name' => 'plugins.lightslider.loop',
+                'validation' => 'strict'
+            ],
+            'plugins.lightslider.mode' => [
+                'type' => 'toggle',
+                'label' => 'Loop',
+                'highlight' => 'fade',
+                'default' => 'fade',
+                'options' => [
+                    'fade' => 'Fade',
+                    'slide' => 'Slide'
+                ],
+                'name' => 'plugins.lightslider.mode',
+                'validation' => 'strict'
+            ],
+            'plugins.lightslider.controls' => [
+                'type' => 'toggle',
+                'label' => 'Controls',
+                'highlight' => true,
+                'default' => 'true',
+                'options' => [
+                    'true' => 'Enabled',
+                    'false' => 'Disabled'
+                ],
+                'name' => 'plugins.lightslider.controls',
+                'validation' => 'strict'
+            ],
+            'plugins.lightslider.keyPress' => [
+                'type' => 'toggle',
+                'label' => 'Key Press',
+                'highlight' => true,
+                'default' => 'true',
+                'options' => [
+                    'true' => 'Enabled',
+                    'false' => 'Disabled'
+                ],
+                'name' => 'plugins.lightslider.keyPress',
+                'validation' => 'strict'
+            ],
+            'plugins.lightslider.auto' => [
+                'type' => 'toggle',
+                'label' => 'Auto',
+                'highlight' => true,
+                'default' => 'true',
+                'options' => [
+                    'true' => 'Enabled',
+                    'false' => 'Disabled'
+                ],
+                'name' => 'plugins.lightslider.auto',
+                'validation' => 'strict'
+            ],
+            'plugins.lightslider.pause' => [
+                'type' => 'text',
+                'size' => 'x-small',
+                'label' => 'Pause',
+                'default' => 2000,
+                'name' => 'plugins.lightslider.pause',
+                'validation' => 'strict'
+            ],
+            'plugins.lightslider.pauseOnHover' => [
+                'type' => 'toggle',
+                'label' => 'Pause on Hover',
+                'highlight' => true,
+                'default' => 'false',
+                'options' => [
+                    'true' => 'Enabled',
+                    'false' => 'Disabled'
+                ],
+                'name' => 'plugins.lightslider.pauseOnHover',
+                'validation' => 'strict'
+            ],
+            'plugins.lightslider.speed' => [
+                'type' => 'text',
+                'size' => 'x-small',
+                'label' => 'Speed',
+                'default' => 1000,
+                'name' => 'plugins.lightslider.speed',
+                'validation' => 'strict'
+            ],
+            'plugins.lightslider.pager' => [
+                'type' => 'toggle',
+                'label' => 'Pager',
+                'highlight' => true,
+                'default' => 'true',
+                'options' => [
+                    'true' => 'Enabled',
+                    'false' => 'Disabled'
+                ],
+                'name' => 'plugins.lightslider.pager',
+                'validation' => 'strict'
+            ],
+            'plugins.lightslider.gallery' => [
+                'type' => 'toggle',
+                'label' => 'Gallery',
+                'highlight' => true,
+                'default' => 'false',
+                'options' => [
+                    'true' => 'Enabled',
+                    'false' => 'Disabled'
+                ],
+                'name' => 'plugins.lightslider.gallery',
+                'validation' => 'strict'
+            ],
+            'plugins.lightslider.gallery_thumb_width' => [
+                'type' => 'text',
+                'size' => 'x-small',
+                'label' => 'Gallery Thumb Width',
+                'default' => 100,
+                'name' => 'plugins.lightslider.gallery_thumb_width',
+                'validation' => 'strict'
+            ],
+            'plugins.lightslider.gallery_thumb_height' => [
+                'type' => 'text',
+                'size' => 'x-small',
+                'label' => 'Gallery Thumb Height',
+                'default' => 100,
+                'name' => 'plugins.lightslider.gallery_thumb_height',
+                'validation' => 'strict'
+            ],
+            'plugins.lightslider.gallery_margin' => [
+                'type' => 'text',
+                'size' => 'x-small',
+                'label' => 'Gallery Margin',
+                'default' => 15,
+                'name' => 'plugins.lightslider.gallery_margin',
+                'validation' => 'strict'
+            ],
+            'plugins.lightslider.gallery_thumb_margin' => [
+                'type' => 'text',
+                'size' => 'x-small',
+                'label' => 'Gallery Thumb Margin',
+                'default' => 5,
+                'name' => 'plugins.lightslider.gallery_thumb_margin',
+                'validation' => 'strict'
+            ],
+            'plugins.lightslider.enableTouch' => [
+                'type' => 'toggle',
+                'label' => 'Enable Touch',
+                'highlight' => true,
+                'default' => 'true',
+                'options' => [
+                    'true' => 'Enabled',
+                    'false' => 'Disabled'
+                ],
+                'name' => 'plugins.lightslider.enableTouch',
+                'validation' => 'strict'
+            ],
+            'plugins.lightslider.enableDrag' => [
+                'type' => 'toggle',
+                'label' => 'Enable Drag',
+                'highlight' => true,
+                'default' => 'true',
+                'options' => [
+                    'true' => 'Enabled',
+                    'false' => 'Disabled'
+                ],
+                'name' => 'plugins.lightslider.enableDrag',
+                'validation' => 'strict'
+            ],
             'plugins.login' => [
                 'type' => '_root',
                 'form_field' => false,
@@ -3171,6 +3518,118 @@ return [
                 ],
                 'name' => 'plugins.problems.built_in_css',
                 'validation' => 'strict'
+            ],
+            'plugins.social-feed' => [
+                'type' => '_root',
+                'form_field' => false,
+                'form' => [
+                    'validation' => 'strict'
+                ]
+            ],
+            'plugins.social-feed.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Plugin status',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.social-feed.enabled',
+                'validation' => 'strict'
+            ],
+            'plugins.social-feed.twitter_consumer_key' => [
+                'type' => 'text',
+                'label' => 'Consumer key',
+                'name' => 'plugins.social-feed.twitter_consumer_key',
+                'validation' => 'strict'
+            ],
+            'plugins.social-feed.twitter_consumer_secret' => [
+                'type' => 'text',
+                'label' => 'Consumer secret',
+                'name' => 'plugins.social-feed.twitter_consumer_secret',
+                'validation' => 'strict'
+            ],
+            'plugins.social-feed.twitter_feeds' => [
+                'type' => 'list',
+                'label' => 'Accounts to follow',
+                'name' => 'plugins.social-feed.twitter_feeds',
+                'validation' => 'strict'
+            ],
+            'plugins.social-feed.twitter_feeds.username' => [
+                'type' => 'text',
+                'label' => 'Username',
+                'name' => 'plugins.social-feed.twitter_feeds.username',
+                'validation' => 'strict'
+            ],
+            'plugins.social-feed.twitter' => [
+                'type' => 'section',
+                'underline' => true,
+                'name' => 'plugins.social-feed.twitter',
+                'validation' => 'strict'
+            ],
+            'plugins.social-feed.facebook_app_id' => [
+                'type' => 'text',
+                'label' => 'App id',
+                'name' => 'plugins.social-feed.facebook_app_id',
+                'validation' => 'strict'
+            ],
+            'plugins.social-feed.facebook_app_secret' => [
+                'type' => 'text',
+                'label' => 'App secret',
+                'name' => 'plugins.social-feed.facebook_app_secret',
+                'validation' => 'strict'
+            ],
+            'plugins.social-feed.facebook_feeds' => [
+                'type' => 'list',
+                'label' => 'Accounts to follow',
+                'name' => 'plugins.social-feed.facebook_feeds',
+                'validation' => 'strict'
+            ],
+            'plugins.social-feed.facebook_feeds.username' => [
+                'type' => 'text',
+                'label' => 'Username',
+                'name' => 'plugins.social-feed.facebook_feeds.username',
+                'validation' => 'strict'
+            ],
+            'plugins.social-feed.facebook' => [
+                'type' => 'section',
+                'underline' => true,
+                'name' => 'plugins.social-feed.facebook',
+                'validation' => 'strict'
+            ],
+            'plugins.social-feed.instagram_client_id' => [
+                'type' => 'text',
+                'label' => 'Client id',
+                'name' => 'plugins.social-feed.instagram_client_id',
+                'validation' => 'strict'
+            ],
+            'plugins.social-feed.instagram_access_token' => [
+                'type' => 'text',
+                'label' => 'Access token',
+                'name' => 'plugins.social-feed.instagram_access_token',
+                'validation' => 'strict'
+            ],
+            'plugins.social-feed.instagram_feeds' => [
+                'type' => 'list',
+                'label' => 'Accounts to follow',
+                'name' => 'plugins.social-feed.instagram_feeds',
+                'validation' => 'strict'
+            ],
+            'plugins.social-feed.instagram_feeds.username' => [
+                'type' => 'text',
+                'label' => 'Username',
+                'name' => 'plugins.social-feed.instagram_feeds.username',
+                'validation' => 'strict'
+            ],
+            'plugins.social-feed.instagram' => [
+                'type' => 'section',
+                'underline' => true,
+                'name' => 'plugins.social-feed.instagram',
+                'validation' => 'strict'
             ]
         ],
         'rules' => [
@@ -3480,6 +3939,42 @@ return [
                         'secret_key' => 'plugins.form.recaptcha.secret_key'
                     ]
                 ],
+                'instagram-feed' => [
+                    'enabled' => 'plugins.instagram-feed.enabled',
+                    'instagram_feed' => [
+                        'count' => 'plugins.instagram-feed.instagram_feed.count',
+                        'username' => 'plugins.instagram-feed.instagram_feed.username',
+                        'cache_expires' => 'plugins.instagram-feed.instagram_feed.cache_expires'
+                    ]
+                ],
+                'lightslider' => [
+                    'enabled' => 'plugins.lightslider.enabled',
+                    'built_in_css' => 'plugins.lightslider.built_in_css',
+                    'slider_type' => 'plugins.lightslider.slider_type',
+                    'type_text_height' => 'plugins.lightslider.type_text_height',
+                    'type_text_vertical_padding' => 'plugins.lightslider.type_text_vertical_padding',
+                    'type_text_horizontal_padding' => 'plugins.lightslider.type_text_horizontal_padding',
+                    'type_text_brightness' => 'plugins.lightslider.type_text_brightness',
+                    'item' => 'plugins.lightslider.item',
+                    'slideMove' => 'plugins.lightslider.slideMove',
+                    'slideMargin' => 'plugins.lightslider.slideMargin',
+                    'loop' => 'plugins.lightslider.loop',
+                    'mode' => 'plugins.lightslider.mode',
+                    'controls' => 'plugins.lightslider.controls',
+                    'keyPress' => 'plugins.lightslider.keyPress',
+                    'auto' => 'plugins.lightslider.auto',
+                    'pause' => 'plugins.lightslider.pause',
+                    'pauseOnHover' => 'plugins.lightslider.pauseOnHover',
+                    'speed' => 'plugins.lightslider.speed',
+                    'pager' => 'plugins.lightslider.pager',
+                    'gallery' => 'plugins.lightslider.gallery',
+                    'gallery_thumb_width' => 'plugins.lightslider.gallery_thumb_width',
+                    'gallery_thumb_height' => 'plugins.lightslider.gallery_thumb_height',
+                    'gallery_margin' => 'plugins.lightslider.gallery_margin',
+                    'gallery_thumb_margin' => 'plugins.lightslider.gallery_thumb_margin',
+                    'enableTouch' => 'plugins.lightslider.enableTouch',
+                    'enableDrag' => 'plugins.lightslider.enableDrag'
+                ],
                 'login' => [
                     'tabs' => 'plugins.login.tabs',
                     'login' => 'plugins.login.login',
@@ -3533,6 +4028,27 @@ return [
                 'problems' => [
                     'enabled' => 'plugins.problems.enabled',
                     'built_in_css' => 'plugins.problems.built_in_css'
+                ],
+                'social-feed' => [
+                    'enabled' => 'plugins.social-feed.enabled',
+                    'twitter' => 'plugins.social-feed.twitter',
+                    'twitter_consumer_key' => 'plugins.social-feed.twitter_consumer_key',
+                    'twitter_consumer_secret' => 'plugins.social-feed.twitter_consumer_secret',
+                    'twitter_feeds' => [
+                        'username' => 'plugins.social-feed.twitter_feeds.username'
+                    ],
+                    'facebook' => 'plugins.social-feed.facebook',
+                    'facebook_app_id' => 'plugins.social-feed.facebook_app_id',
+                    'facebook_app_secret' => 'plugins.social-feed.facebook_app_secret',
+                    'facebook_feeds' => [
+                        'username' => 'plugins.social-feed.facebook_feeds.username'
+                    ],
+                    'instagram' => 'plugins.social-feed.instagram',
+                    'instagram_client_id' => 'plugins.social-feed.instagram_client_id',
+                    'instagram_access_token' => 'plugins.social-feed.instagram_access_token',
+                    'instagram_feeds' => [
+                        'username' => 'plugins.social-feed.instagram_feeds.username'
+                    ]
                 ]
             ]
         ],

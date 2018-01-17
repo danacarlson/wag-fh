@@ -1,13 +1,21 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1515878220,
-    'checksum' => 'da4c81a8f9bc35911f8f095fa3afd747',
+    'timestamp' => 1516055392,
+    'checksum' => 'cd0ed569f2656681a96758bd50436800',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
                 'modified' => 1509977409
+            ],
+            'plugins/instagram-feed' => [
+                'file' => 'user/config/plugins/instagram-feed.yaml',
+                'modified' => 1515973391
+            ],
+            'plugins/social-feed' => [
+                'file' => 'user/config/plugins/social-feed.yaml',
+                'modified' => 1515973213
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
@@ -15,7 +23,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1510002224
+                'modified' => 1516055388
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -23,7 +31,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1509978949
+                'modified' => 1515974630
             ]
         ],
         'system/config' => [
@@ -41,7 +49,7 @@ return [
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1515877814
+                'modified' => 1515972187
             ]
         ],
         'user/plugins' => [
@@ -61,6 +69,14 @@ return [
                 'file' => 'user/plugins/form/form.yaml',
                 'modified' => 1515878213
             ],
+            'plugins/instagram-feed' => [
+                'file' => 'user/plugins/instagram-feed/instagram-feed.yaml',
+                'modified' => 1515972936
+            ],
+            'plugins/lightslider' => [
+                'file' => 'user/plugins/lightslider/lightslider.yaml',
+                'modified' => 1515974630
+            ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
                 'modified' => 1515878210
@@ -68,6 +84,10 @@ return [
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
                 'modified' => 1509813701
+            ],
+            'plugins/social-feed' => [
+                'file' => 'user/plugins/social-feed/social-feed.yaml',
+                'modified' => 1515960272
             ]
         ]
     ],
@@ -175,6 +195,43 @@ return [
                     ]
                 ]
             ],
+            'instagram-feed' => [
+                'enabled' => true,
+                'route' => '/',
+                'instagram_feed' => [
+                    'count' => '10',
+                    'username' => 'womensactiongroupofforesthills',
+                    'cache_expires' => 300
+                ]
+            ],
+            'lightslider' => [
+                'enabled' => true,
+                'built_in_css' => true,
+                'slider_type' => 'text',
+                'type_text_height' => 'auto',
+                'type_text_vertical_padding' => '80px',
+                'type_text_horizontal_padding' => '50px',
+                'type_text_brightness' => 0,
+                'item' => 1,
+                'slideMove' => 1,
+                'slideMargin' => 0,
+                'loop' => 'false',
+                'mode' => 'fade',
+                'controls' => 'true',
+                'keyPress' => 'true',
+                'auto' => 'true',
+                'pause' => 2000,
+                'speed' => 1000,
+                'pager' => 'true',
+                'gallery' => 'false',
+                'gallery_thumb_width' => 100,
+                'gallery_thumb_height' => 100,
+                'gallery_margin' => 15,
+                'gallery_thumb_margin' => 5,
+                'enableTouch' => 'true',
+                'enableDrag' => 'true',
+                'pauseOnHover' => 'false'
+            ],
             'login' => [
                 'enabled' => true,
                 'built_in_css' => true,
@@ -231,6 +288,21 @@ return [
             'problems' => [
                 'enabled' => true,
                 'built_in_css' => true
+            ],
+            'social-feed' => [
+                'enabled' => false,
+                'twitter_consumer_key' => 'GZgBcKoLlYhqusB0eSnllILUM',
+                'twitter_consumer_secret' => 'iRCeByr1kywTJblubqtbLl99nMNYlHxJeU9OUiXzweyJLTS8VJ',
+                'instagram_feeds' => [
+                    0 => [
+                        'username' => 'womensactiongroupofforesthills/'
+                    ]
+                ],
+                'twitter_feeds' => [
+                    0 => [
+                        'username' => 'WomensActionFH'
+                    ]
+                ]
             ]
         ],
         'media' => [
@@ -544,26 +616,22 @@ return [
                     'url' => '#contact'
                 ]
             ],
-            'social' => [
+            'actionlinks' => [
                 0 => [
-                    'title' => 'twitter',
-                    'url' => 'http://twitter.com/jekyllrb'
+                    'title' => 'About',
+                    'url' => '/#about'
                 ],
                 1 => [
-                    'title' => 'facebook',
-                    'url' => NULL
+                    'title' => 'Actions',
+                    'url' => '/#actions'
                 ],
                 2 => [
-                    'title' => 'stack-overflow',
-                    'url' => 'http://stackoverflow.com/questions/tagged/jekyll'
+                    'title' => 'Resources',
+                    'url' => '/#resources'
                 ],
                 3 => [
-                    'title' => 'bitbucket',
-                    'url' => 'http://bitbucket.org/jekyll'
-                ],
-                4 => [
-                    'title' => 'github',
-                    'url' => 'http://github.com/jekyll'
+                    'title' => 'Contact',
+                    'url' => '/#contact'
                 ]
             ]
         ],
@@ -669,7 +737,7 @@ return [
                 'etag' => false,
                 'vary_accept_encoding' => false,
                 'redirect_default_route' => false,
-                'redirect_default_code' => 302,
+                'redirect_default_code' => '302',
                 'redirect_trailing_slash' => true,
                 'ignore_files' => [
                     0 => '.DS_Store'
@@ -730,11 +798,11 @@ return [
                 ]
             ],
             'errors' => [
-                'display' => 0,
+                'display' => '0',
                 'log' => true
             ],
             'debugger' => [
-                'enabled' => false,
+                'enabled' => true,
                 'shutdown' => [
                     'close_connection' => true
                 ],
@@ -755,7 +823,8 @@ return [
                 'allowed_fallback_types' => [
                     
                 ],
-                'auto_metadata_exif' => false
+                'auto_metadata_exif' => false,
+                'upload_limit' => 33554432
             ],
             'session' => [
                 'enabled' => true,

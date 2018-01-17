@@ -33,7 +33,7 @@ class __TwigTemplate_69fc8cd56bdbfc6de56a9eb7ca4472b62198bcb887b1b2fb8fff730b99d
         $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "actions", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["actions"]) {
             // line 10
-            echo "            <div class=\"col-md-4 col-sm-6 portfolio-item\">
+            echo "            <div class=\"col-md-3 col-sm-6 portfolio-item\">
                 <a href=\"#portfolioModal";
             // line 11
             echo $this->getAttribute($context["actions"], "modalid", array());
@@ -66,17 +66,27 @@ class __TwigTemplate_69fc8cd56bdbfc6de56a9eb7ca4472b62198bcb887b1b2fb8fff730b99d
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['actions'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 26
-        echo "    </div>
+        echo "        <div class=\"col-md-3 col-sm-6 portfolio-item view-all\">
+            <a class=\"view-all-inner portfolio-link\" href=\"/actions\">
+                <div class=\"portfolio-hover\">
+                        <div class=\"portfolio-hover-content\">
+                            <i class=\"fa fa-plus fa-3x\"></i>
+                        </div>
+                    </div>
+                <h4>View All</h4>
+            </a>
+        </div>
+    </div>
 </div>
 </section>
 
 
  ";
-        // line 31
+        // line 41
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "actions", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["actions"]) {
-            // line 32
+            // line 42
             echo "    <div class=\"portfolio-modal modal fade\" id=\"portfolioModal";
             echo $this->getAttribute($context["actions"], "modalid", array());
             echo "\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\">
@@ -92,26 +102,26 @@ class __TwigTemplate_69fc8cd56bdbfc6de56a9eb7ca4472b62198bcb887b1b2fb8fff730b99d
                     <div class=\"col-lg-8 col-lg-offset-2\">
                         <div class=\"modal-body\">
                             <h2>";
-            // line 44
+            // line 54
             echo $this->getAttribute($context["actions"], "title", array());
             echo "</h2>
                             <hr class=\"star-primary\">
                             <div ";
-            // line 46
+            // line 56
             if ($this->getAttribute($context["actions"], "imgextra", array())) {
                 echo "class=\"modal-images\"";
             }
             echo ">
                                 <img src=\"";
-            // line 47
+            // line 57
             echo $this->getAttribute($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", array()), $this->getAttribute($context["actions"], "img", array()), array(), "array"), "url", array());
             echo "\" class=\"img-responsive img-centered\" alt=\"";
             echo $this->getAttribute($context["actions"], "alt", array());
             echo "\">
                                 ";
-            // line 48
+            // line 58
             if ($this->getAttribute($context["actions"], "imgextra", array())) {
-                // line 49
+                // line 59
                 echo "                                <img src=\"";
                 echo $this->getAttribute($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", array()), $this->getAttribute($context["actions"], "imgextra", array()), array(), "array"), "url", array());
                 echo "\" class=\"img-responsive img-centered\" alt=\"";
@@ -119,17 +129,17 @@ class __TwigTemplate_69fc8cd56bdbfc6de56a9eb7ca4472b62198bcb887b1b2fb8fff730b99d
                 echo "\">
                                 ";
             }
-            // line 51
+            // line 61
             echo "                            </div>
                             <p>";
-            // line 52
+            // line 62
             echo $this->getAttribute($context["actions"], "description", array());
             echo "</p>
                             <ul class=\"list-inline item-details\">
 
                                 <li>Date:
                                     <strong>";
-            // line 56
+            // line 66
             echo $this->getAttribute($context["actions"], "projectdate", array());
             echo "
                                     </strong>
@@ -162,7 +172,7 @@ class __TwigTemplate_69fc8cd56bdbfc6de56a9eb7ca4472b62198bcb887b1b2fb8fff730b99d
 
     public function getDebugInfo()
     {
-        return array (  133 => 56,  126 => 52,  123 => 51,  115 => 49,  113 => 48,  107 => 47,  101 => 46,  96 => 44,  80 => 32,  76 => 31,  69 => 26,  58 => 21,  54 => 20,  48 => 17,  39 => 11,  36 => 10,  32 => 9,  25 => 5,  19 => 1,);
+        return array (  143 => 66,  136 => 62,  133 => 61,  125 => 59,  123 => 58,  117 => 57,  111 => 56,  106 => 54,  90 => 42,  86 => 41,  69 => 26,  58 => 21,  54 => 20,  48 => 17,  39 => 11,  36 => 10,  32 => 9,  25 => 5,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -184,7 +194,7 @@ class __TwigTemplate_69fc8cd56bdbfc6de56a9eb7ca4472b62198bcb887b1b2fb8fff730b99d
     </div>
     <div class=\"row\">
         {% for actions in page.header.actions %}
-            <div class=\"col-md-4 col-sm-6 portfolio-item\">
+            <div class=\"col-md-3 col-sm-6 portfolio-item\">
                 <a href=\"#portfolioModal{{ actions.modalid }}\" class=\"portfolio-link\" data-toggle=\"modal\">
                     <div class=\"portfolio-hover\">
                         <div class=\"portfolio-hover-content\">
@@ -200,6 +210,16 @@ class __TwigTemplate_69fc8cd56bdbfc6de56a9eb7ca4472b62198bcb887b1b2fb8fff730b99d
             </div>
 
         {% endfor %}
+        <div class=\"col-md-3 col-sm-6 portfolio-item view-all\">
+            <a class=\"view-all-inner portfolio-link\" href=\"/actions\">
+                <div class=\"portfolio-hover\">
+                        <div class=\"portfolio-hover-content\">
+                            <i class=\"fa fa-plus fa-3x\"></i>
+                        </div>
+                    </div>
+                <h4>View All</h4>
+            </a>
+        </div>
     </div>
 </div>
 </section>

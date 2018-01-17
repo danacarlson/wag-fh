@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/mattanddana/Documents/MAMPWebsites/system/config/system.yaml',
-    'modified' => 1515877814,
+    'modified' => 1515972187,
     'data' => [
         'absolute_urls' => false,
         'timezone' => '',
@@ -147,9 +147,9 @@ return [
             'log' => true
         ],
         'debugger' => [
-            'enabled' => false,
+            'enabled' => true,
             'shutdown' => [
-                'close_connection' => true
+                'close_connection' => false
             ]
         ],
         'images' => [

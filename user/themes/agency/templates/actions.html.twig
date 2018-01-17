@@ -56,12 +56,22 @@
             <div>
                 <h4>{{ actions.title }}</h4>
                 <hr class="star-primary">
-                <div {%if actions.imgextra %}class="double"{% endif %}>
-                    <img src="/user/pages/01.home/_actions/{{ actions.img }}" class="img-responsive img-centered" alt="{{ actions.alt }}">
-                    {% if actions.imgextra %}
-                    <img src="/user/pages/01.home/_actions/{{ actions.imgextra }}" class="img-responsive img-centered" alt="{{ actions.altextra }}">
-                    {% endif %}
+                {%if actions.imgextra %}
+                <div class="row">
+                    <div class="col-sm-offset-2 col-sm-4">
+                        <img src="/user/pages/01.home/_actions/{{ actions.img }}" class="img-responsive img-centered" alt="{{ actions.alt }}">
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="/user/pages/01.home/_actions/{{ actions.imgextra }}" class="img-responsive img-centered" alt="{{ actions.altextra }}">
+                    </div>
                 </div>
+                {% else %}
+                <div class="row">
+                    <div class="col-sm-12">
+                        <img src="/user/pages/01.home/_actions/{{ actions.img }}" class="img-responsive img-centered" alt="{{ actions.alt }}">
+                    </div>
+                </div>
+                {% endif %}
                 <p>{{ actions.description }}</p>
                 <ul class="list-inline item-details">
 
