@@ -60,7 +60,6 @@ actions:
         subtitle: Education
         layout: default
         modalid: 4
-        img: book-thumb.jpg
         thumbnail: book-thumb.jpg
         alt: ''
         altextra: ''
