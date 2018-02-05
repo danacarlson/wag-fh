@@ -6250,6 +6250,10 @@ body {
   padding-bottom: 20px;
   text-align: center; }
 
+@media (max-width: 768px) {
+  .social-embeds {
+    margin-left: 10px;
+    margin-right: 10px; } }
 .social-embeds .col-sm-5 {
   margin-top: 50px; }
 .social-embeds .subhead {
