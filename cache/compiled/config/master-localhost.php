@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1516055392,
-    'checksum' => 'cd0ed569f2656681a96758bd50436800',
+    'timestamp' => 1517864506,
+    'checksum' => '7562e555577161aeca9f2ee50d646883',
     'files' => [
         'user/config' => [
             'media' => [
@@ -23,7 +23,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1516055388
+                'modified' => 1517864506
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -67,7 +67,7 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1515878213
+                'modified' => 1517863598
             ],
             'plugins/instagram-feed' => [
                 'file' => 'user/plugins/instagram-feed/instagram-feed.yaml',
@@ -583,7 +583,7 @@ return [
                 1 => 'tag'
             ],
             'metadata' => [
-                'description' => 'Womens\' Action Group of Forest Hills'
+                'description' => 'Women\'s Action Group of Forest Hills'
             ],
             'summary' => [
                 'enabled' => true,
