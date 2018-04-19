@@ -1,13 +1,15 @@
 {% if feed %}
-<div class="instagram-feed carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
+<ul class="instagram-feed">
     {% for item in feed|slice(0, count) %}
-        <div class="carousel-item item {% if loop.first %}active{% endif %}">
+        <li>
             <a href="{{ item.link }}" target="_blank">
                 <img src="{{ item.images.thumbnail.url }}" alt="">
             </a>
-        </div>
+        </li>
     {% endfor %}
-  </div>
-</div>
+</ul>
+{% else %}
+<p>
+    Could not load the Instagram feed!
+</p>
 {% endif %}
