@@ -4,6 +4,45 @@ media_order: 'choices_thumb.jpg,activist-fair-lg.jpg,activist-fair-lg2.jpg,activ
 menu: Actions
 actions:
     -
+        title: 'Grace Meng Re-election Petitioning'
+        subtitle: Political
+        layout: default
+        modalid: 10
+        date: null
+        img: grace-meng-petitioning.jpg
+        thumbnail: grace-meng-petitioning-thumb.jpg
+        alt: ''
+        imgextra: grace-meng-petitioning2.jpg
+        altextra: ''
+        projectdate: 'March 2018'
+        description: 'WAG members collected signatures for Congresswoman Grace Meng''s Re-election Campaign.'
+    -
+        title: 'NYC Women''s March 2018'
+        subtitle: Political
+        layout: default
+        modalid: 9
+        date: null
+        img: womens-march-2018.jpg
+        thumbnail: womens-march-2018-thumb.jpg
+        alt: ''
+        imgextra: null
+        altextra: ''
+        projectdate: 'Jan 2018'
+        description: 'WAG members at the NYC Women''s March'
+    -
+        title: 'STEPS Amazon Wishlist'
+        subtitle: Fundraiser
+        layout: default
+        modalid: 8
+        date: null
+        img: steps.jpg
+        thumbnail: steps-thumb.jpg
+        alt: ''
+        imgextra: null
+        altextra: ''
+        projectdate: 'Dec 2017'
+        description: 'WAG created an Amazon Wish List in support of STEPS To End Family Violence. Please visit <a href="https://www.egscf.org/programs/steps/">https://www.egscf.org/programs/steps/</a> for more information.'
+    -
         title: 'UnLocal DACA Student Support'
         subtitle: Fundraiser
         layout: default
@@ -53,42 +92,6 @@ actions:
         altextra: ''
         projectdate: Ongoing
         description: 'Members of WAG have come together in a book club in order to explore and understand issues of race and privilege in our communities and our own lives. Our group began with <i>Waking Up White</i> by Debby Irving. We have continued to select texts that we believe can inform and expand our understandings of race and privilege.'
-    -
-        title: 'Forest Hills Activist Fair'
-        subtitle: Education
-        layout: default
-        modalid: 2
-        img: activist-fair-lg.jpg
-        imgextra: activist-fair-lg2.jpg
-        thumbnail: activist-fair-thumb.jpg
-        alt: ''
-        altextra: ''
-        projectdate: 'May 2017'
-        description: 'WAG volunteers represented our group at the Forest Hills Activism Fair coordinated by Congresswoman Grace Meng.'
-    -
-        title: 'Ides of Trump Postcard Initiative'
-        subtitle: Political
-        layout: default
-        modalid: 1
-        img: ides-lg1.jpg
-        imgextra: ides-lg-2.jpg
-        thumbnail: ides-thumb.jpg
-        alt: ''
-        altextra: ''
-        projectdate: 'March 2017'
-        description: 'Over 300 postcards delivered to President 45 telling it like it is. <a href="https://www.facebook.com/TheIdesOfTrump/">https://www.facebook.com/TheIdesOfTrump/</a>'
-    -
-        title: 'Queens Stands Together Rally'
-        subtitle: Political
-        layout: default
-        modalid: 0
-        img: Rally1.jpg
-        imgextra: null
-        thumbnail: Rally1-thumb.png
-        alt: ''
-        altextra: ''
-        projectdate: 'February 2017'
-        description: 'The Queens Stands Together Rally took place at MacDonald Park right here in Forest Hills and celebrated the incredible diversity of Queens residents. Hundreds gathered to send a message of support to our immigrant communities that we stand with them. WAG co-sponsored this rally with more than over 40 other activist organizations from Queens. Photo Credit: http://edgeofthecityblog.blogspot.com/'
 ---
 
 ## Actions
