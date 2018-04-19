@@ -1,19 +1,4 @@
-# Grav Root and Unused
-/*.*
-!.gitignore
-/assets
-/backup
-/bin
-/cache
-/images
-/logs
-/system
-user/*.*
-user/accounts
-user/config/*.*
-user/data
-user/themes/antimatter
-/webserver-configs
+
 
 # Created by https://www.gitignore.io/api/node,bower,sass,windows
 
