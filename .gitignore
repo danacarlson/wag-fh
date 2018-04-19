@@ -13,7 +13,6 @@ user/accounts
 user/config/*.*
 user/data
 user/themes/antimatter
-/vendor
 /webserver-configs
 
 # Created by https://www.gitignore.io/api/node,bower,sass,windows
