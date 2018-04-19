@@ -19,6 +19,45 @@ process:
 onpage_menu: true
 actions:
     -
+        title: 'Grace Meng Re-election Petitioning'
+        subtitle: Political
+        layout: default
+        modalid: 10
+        date: null
+        img: grace-meng-petitioning.jpg
+        thumbnail: grace-meng-petitioning-thumb.jpg
+        alt: ''
+        imgextra: grace-meng-petitioning2.jpg
+        altextra: ''
+        projectdate: 'March 2018'
+        description: 'WAG members collected signatures for Congresswoman Grace Meng''s Re-election Campaign.'
+    -
+        title: 'NYC Women''s March 2018'
+        subtitle: Political
+        layout: default
+        modalid: 9
+        date: null
+        img: womens-march-2018.jpg
+        thumbnail: womens-march-2018-thumb.jpg
+        alt: ''
+        imgextra: null
+        altextra: ''
+        projectdate: 'Jan 2018'
+        description: 'WAG members at the NYC Women''s March'
+    -
+        title: 'STEPS Amazon Wishlist'
+        subtitle: Fundraiser
+        layout: default
+        modalid: 8
+        date: null
+        img: steps.jpg
+        thumbnail: steps-thumb.jpg
+        alt: ''
+        imgextra: null
+        altextra: ''
+        projectdate: 'Dec 2017'
+        description: 'WAG created an Amazon Wish List in support of STEPS To End Family Violence. Please visit <a href="https://www.egscf.org/programs/steps/">https://www.egscf.org/programs/steps/</a> for more information.'
+    -
         title: 'UnLocal DACA Student Support'
         subtitle: Fundraiser
         layout: default
