@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1524098795,
-    'checksum' => 'c3d44b9b24b3fdea516b2ca011cf7d46',
+    'timestamp' => 1524115505,
+    'checksum' => '3092351edd64d2df1e43491806508fc4',
     'files' => [
         'system/blueprints/config' => [
             'media' => [
@@ -41,7 +41,7 @@ return [
             ],
             'plugins/instagram' => [
                 'file' => 'user/plugins/instagram/blueprints.yaml',
-                'modified' => 1524098794
+                'modified' => 1524115501
             ],
             'plugins/instagram-feed' => [
                 'file' => 'user/plugins/instagram-feed/blueprints.yaml',

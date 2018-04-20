@@ -1,13 +1,13 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1524098795,
-    'checksum' => '44af94caa13f59685e36edccc41558cf',
+    'timestamp' => 1524115505,
+    'checksum' => '19aa42a93da2f1f791b24031569017b7',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
-                'modified' => 1509977409
+                'modified' => 1524115501
             ],
             'plugins/instagram-feed' => [
                 'file' => 'user/config/plugins/instagram-feed.yaml',
@@ -27,11 +27,11 @@ return [
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
-                'modified' => 1509977409
+                'modified' => 1524115501
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1524018995
+                'modified' => 1524114821
             ]
         ],
         'system/config' => [
@@ -71,7 +71,7 @@ return [
             ],
             'plugins/instagram' => [
                 'file' => 'user/plugins/instagram/instagram.yaml',
-                'modified' => 1524098794
+                'modified' => 1524115501
             ],
             'plugins/instagram-feed' => [
                 'file' => 'user/plugins/instagram-feed/instagram-feed.yaml',
