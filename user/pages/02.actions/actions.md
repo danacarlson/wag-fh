@@ -32,6 +32,19 @@ actions:
         projectdate: 'March 2018'
         description: 'WAG members collected signatures for Congresswoman Grace Meng''s Re-election Campaign.'
     -
+        title: 'March for Our Lives'
+        subtitle: Political
+        layout: default
+        modalid: 10
+        date: null
+        img: marchforourlives1.jpg
+        thumbnail: marchforourlives1-thumb.jpg
+        alt: ''
+        imgextra: marchforourlives2.jpg
+        altextra: ''
+        projectdate: 'March 2018'
+        description: 'WAG members followed the lead of the students in their lives and took part in NYC’s March For Our Lives March 24th.  Thousands turned out demanding gun reform and making their voices heard along with all those marching in Washington, DC, Los Angeles, Seattle, Paris, Amsterdam and numerous other cities. Thoughts and prayers are not enough, it’s time for real change!!! '
+    -
         title: 'NYC Women''s March 2018'
         subtitle: Political
         layout: default

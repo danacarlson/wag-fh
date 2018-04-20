@@ -1,13 +1,13 @@
 ---
 title: Actions
-media_order: 'choices_thumb.jpg,activist-fair-lg.jpg,activist-fair-lg2.jpg,activist-fair-thumb.jpg,book-thumb.jpg,choices_lg_1.jpg,choices_lg_2.jpg,ides-lg-2.jpg,ides-lg1.jpg,ides-thumb.jpg,koslowitz-lg1.jpg,koslowitz-lg2.jpg,koslowitz-thumb.jpg,postcards-va-thumb.jpg,postcards_va_lg.jpg,UnlocalLogoFinal_small.png'
+media_order: 'choices_thumb.jpg,activist-fair-lg.jpg,activist-fair-lg2.jpg,activist-fair-thumb.jpg,book-thumb.jpg,choices_lg_1.jpg,choices_lg_2.jpg,ides-lg-2.jpg,ides-lg1.jpg,ides-thumb.jpg,koslowitz-lg1.jpg,koslowitz-lg2.jpg,koslowitz-thumb.jpg,postcards-va-thumb.jpg,postcards_va_lg.jpg,UnlocalLogoFinal_small.png,grace-meng-petitioning-thumb.jpg,Rally1.jpg,Rally1-thumb.png,womens-march-2018.jpg,steps-thumb.jpg,grace-meng-petitioning2.jpg,steps.jpg,womens-march-2018-thumb.jpg,grace-meng-petitioning.jpg,marchforourlives2-thumb.jpg,marchforourlives2.jpg,marchforourlives1-thumb.jpg,marchforourlives1.jpg'
 menu: Actions
 actions:
     -
         title: 'Grace Meng Re-election Petitioning'
         subtitle: Political
         layout: default
-        modalid: 10
+        modalid: 11
         date: null
         img: grace-meng-petitioning.jpg
         thumbnail: grace-meng-petitioning-thumb.jpg
@@ -16,6 +16,19 @@ actions:
         altextra: ''
         projectdate: 'March 2018'
         description: 'WAG members collected signatures for Congresswoman Grace Meng''s Re-election Campaign.'
+    -
+        title: 'March for Our Lives'
+        subtitle: Political
+        layout: default
+        modalid: 10
+        date: null
+        img: marchforourlives1.jpg
+        thumbnail: marchforourlives1-thumb.jpg
+        alt: ''
+        imgextra: marchforourlives2.jpg
+        altextra: ''
+        projectdate: 'March 2018'
+        description: 'WAG members followed the lead of the students in their lives and took part in NYC’s March For Our Lives March 24th.  Thousands turned out demanding gun reform and making their voices heard along with all those marching in Washington, DC, Los Angeles, Seattle, Paris, Amsterdam and numerous other cities. Thoughts and prayers are not enough, it’s time for real change!!! '
     -
         title: 'NYC Women''s March 2018'
         subtitle: Political
@@ -81,17 +94,6 @@ actions:
         altextra: ''
         projectdate: 'June 2017'
         description: 'In the summer of 2017, members of WAG collected signatures for Karen Koslowitz''s petitions to be an incumbent on the ballot for her New York City Council seat. We helped Councilwoman Koslowitz''s office collect over 100 signatures.'
-    -
-        title: Bookclub
-        subtitle: Education
-        layout: default
-        modalid: 3
-        img: book-thumb.jpg
-        thumbnail: book-thumb.jpg
-        alt: ''
-        altextra: ''
-        projectdate: Ongoing
-        description: 'Members of WAG have come together in a book club in order to explore and understand issues of race and privilege in our communities and our own lives. Our group began with <i>Waking Up White</i> by Debby Irving. We have continued to select texts that we believe can inform and expand our understandings of race and privilege.'
 ---
 
 ## Actions

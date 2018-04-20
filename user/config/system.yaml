@@ -108,7 +108,7 @@ errors:
   display: '0'
   log: true
 debugger:
-  enabled: true
+  enabled: false
   shutdown:
     close_connection: true
   twig: true
@@ -121,9 +121,10 @@ images:
 media:
   enable_media_timestamp: false
   auto_metadata_exif: false
-  upload_limit: 33554432
+  upload_limit: 536870912
 session:
   enabled: true
+  initialize: true
   timeout: 1800
   name: grav-site
   secure: false
