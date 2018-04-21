@@ -1,17 +1,21 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1524115505,
-    'checksum' => '19aa42a93da2f1f791b24031569017b7',
+    'timestamp' => 1524266428,
+    'checksum' => 'b6a500a3e305262a0d047f7ce077657b',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
-                'modified' => 1524115501
+                'modified' => 1524265825
+            ],
+            'plugins/instagram' => [
+                'file' => 'user/config/plugins/instagram.yaml',
+                'modified' => 1524266428
             ],
             'plugins/instagram-feed' => [
                 'file' => 'user/config/plugins/instagram-feed.yaml',
-                'modified' => 1524018964
+                'modified' => 1524265954
             ],
             'plugins/social-feed' => [
                 'file' => 'user/config/plugins/social-feed.yaml',
@@ -27,11 +31,11 @@ return [
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
-                'modified' => 1524115501
+                'modified' => 1524265825
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1524114821
+                'modified' => 1524265825
             ]
         ],
         'system/config' => [
@@ -71,7 +75,7 @@ return [
             ],
             'plugins/instagram' => [
                 'file' => 'user/plugins/instagram/instagram.yaml',
-                'modified' => 1524115501
+                'modified' => 1524265397
             ],
             'plugins/instagram-feed' => [
                 'file' => 'user/plugins/instagram-feed/instagram-feed.yaml',
@@ -208,10 +212,16 @@ return [
                 'route' => '/',
                 'filters' => [
                     'category' => NULL
+                ],
+                'feed_parameters' => [
+                    'count' => 7,
+                    'cache_time' => 1,
+                    'user_id' => 'microstudionyc',
+                    'access_token' => '3672879800.1cdeb93.d5fe254d39ca469aa58153a7e68d79c6'
                 ]
             ],
             'instagram-feed' => [
-                'enabled' => true,
+                'enabled' => false,
                 'route' => '/',
                 'instagram_feed' => [
                     'count' => '10',

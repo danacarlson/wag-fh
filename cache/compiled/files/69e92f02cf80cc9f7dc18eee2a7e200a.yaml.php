@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/mattanddana/Documents/MAMPWebsites/user/plugins/instagram/blueprints.yaml',
-    'modified' => 1524115501,
+    'modified' => 1524265397,
     'data' => [
         'name' => 'Instagram',
         'version' => '1.3.0',

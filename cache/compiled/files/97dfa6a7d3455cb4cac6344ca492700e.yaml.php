@@ -2,9 +2,9 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/mattanddana/Documents/MAMPWebsites/user/config/plugins/instagram-feed.yaml',
-    'modified' => 1524018964,
+    'modified' => 1524265954,
     'data' => [
-        'enabled' => true,
+        'enabled' => false,
         'route' => '/',
         'instagram_feed' => [
             'count' => '10',
