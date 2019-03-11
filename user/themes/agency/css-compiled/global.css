@@ -6080,7 +6080,8 @@ body {
 
 .social-embeds .subhead {
   display: block;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  whitespace: nowrap; }
   .social-embeds .subhead .fa {
     font-size: 1.5em;
     position: relative;
