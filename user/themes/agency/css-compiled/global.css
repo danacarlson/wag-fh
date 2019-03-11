@@ -6081,7 +6081,7 @@ body {
 .social-embeds .subhead {
   display: block;
   margin-bottom: 10px;
-  whitespace: nowrap; }
+  white-space: nowrap; }
   .social-embeds .subhead .fa {
     font-size: 1.5em;
     position: relative;
